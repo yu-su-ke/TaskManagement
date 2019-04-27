@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TaskManagement2</string>
+
+    <!-- ここからactivity_main 関連 -->
+    <string name="text01_name">・予定名</string>
+    <string name="text01_date">・年月日</string>
+    <string name="text01_time">・時間</string>
+    <string name="text01_item">・重要度</string>
+    <string name="text01_memo">・メモ</string>
+    <string name="text01_caution">※</string>
+    <string name="button01_registration">登録</string>
+    <string name="button01_show">予定確認</string>
+
+    <string-array name="list">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+    <!-- ここまで -->
+
+    <!-- row_sheet_listView -->
+    <string name="text_title_limit">期限：</string>
+    <string name="text_title_item">重要度：</string>
+    <!-- ここまで -->
+
+    <!-- select_sheet_listView -->
+    <string name="text03_title_detail">よていかくにんちゅうっ！！。</string>
+</resources>

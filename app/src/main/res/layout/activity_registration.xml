@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yusuke.taskmanagement.RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="372dp"
+        android:layout_height="503dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 予定名 -->
+            <TextView
+                android:id="@+id/text01"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="@string/text01_name"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text01caution01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/text01_caution"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <!-- ellipsize：文字が行に収まりきらない末尾を「...」表示 -->
+            <!-- inputType：表示するキーボードを文字に指定 -->
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.063"
+                android:hint="予定名を入力して下さい"
+                android:maxLength="20"/>
+
+            <!-- 日付入力 -->
+            <TextView
+                android:id="@+id/text02"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:text="@string/text01_date"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                app:layout_constraintVertical_bias="0.498" />
+
+
+            <!-- 時間入力 -->
+            <TextView
+                android:id="@+id/text03"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:text="@string/text01_time"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+
+            <!-- 重要度 -->
+            <TextView
+                android:id="@+id/text05"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_marginTop="20dp"
+                android:text="@string/text01_item"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/list" />
+
+
+            <!-- メモ -->
+            <TextView
+                android:id="@+id/text06"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.3"
+                android:text="@string/text01_memo"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text01caution02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/text01_caution"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:maxLength="40"
+                android:text=""
+                android:hint="40文字まで入力できます"/>
+
+            <!-- 登録ボタン -->
+            <Button
+                android:id="@+id/button01Registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout01Memo"
+                android:layout_centerHorizontal="true"
+                android:text="@string/button01_registration"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_weight="0.57" />
+
+            <TextView
+                android:id="@+id/textMargin01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="\n\n\n\n\n\n\n\n\n\n\n\n\n" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

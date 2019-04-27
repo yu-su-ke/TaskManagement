@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:weightSum="1">
+
+    <!-- 予定名 -->
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- タイトル：期限 -->
+        <TextView
+            android:id="@+id/textTitleLimit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/text_title_limit"
+            android:textSize="14sp" />
+
+        <!-- データ表示用：期限 -->
+        <TextView
+            android:id="@+id/textLimit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <!-- タイトル：重要度 -->
+        <TextView
+            android:id="@+id/textTitleItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/text_title_item"
+            android:textSize="14sp" />
+
+        <!-- データ表示用：重要度 -->
+        <TextView
+            android:id="@+id/textItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- データ表示用：メモ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="0.43">
+
+        <TextView
+            android:id="@+id/textMemo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_weight="1.65" />
+    </LinearLayout>
+
+</LinearLayout>
